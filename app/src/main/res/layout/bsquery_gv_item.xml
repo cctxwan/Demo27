@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:background="@mipmap/xh_txt_bg"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/txt_bsquery_dufa"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_25_dip"
+        android:textSize="@dimen/dimen_18_dip"
+        android:gravity="center"
+        android:text="读法" />
+
+    <TextView
+        android:id="@+id/txt_bsquery_hanzi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_5_dip"
+        android:textSize="@dimen/dimen_33_dip"
+        android:gravity="center"
+        android:text="汉字" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:visibility="invisible"
+        android:layout_marginTop="@dimen/dimen_5_dip"
+        android:weightSum="2">
+
+        <TextView
+            android:id="@+id/txt_bsquery_pinyin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center|right"
+            android:layout_weight="1"
+            android:textSize="@dimen/dimen_16_dip"
+            android:text="拼音：" />
+
+        <TextView
+            android:id="@+id/txt_bsquery_wubi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center|left"
+            android:layout_weight="1"
+            android:textSize="@dimen/dimen_16_dip"
+            android:text="五笔：" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_5_dip"
+        android:visibility="invisible"
+        android:weightSum="2">
+
+        <TextView
+            android:id="@+id/txt_bsquery_bushou"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="部首："
+            android:layout_weight="1"
+            android:gravity="center|right"
+            android:textSize="@dimen/dimen_16_dip" />
+
+        <TextView
+            android:id="@+id/txt_bsquery_bihua"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="笔画："
+            android:layout_weight="1"
+            android:gravity="center|left"
+            android:textSize="@dimen/dimen_16_dip" />
+
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,92 @@
+apply plugin: 'com.android.application'
+apply plugin: 'com.mob.sdk'
+
+MobSDK {
+    appKey "270ff321e58ee"
+    appSecret "08865e3e88b4de0203bc4847a73f1bb6"
+
+    SMSSDK {}
+}
+
+android {
+
+    lintOptions {
+        checkReleaseBuilds false
+        abortOnError false
+    }
+
+    aaptOptions.cruncherEnabled = false
+    aaptOptions.useNewCruncher = false
+
+    compileSdkVersion 26
+    buildToolsVersion '28.0.3'
+    defaultConfig {
+        multiDexEnabled true
+
+        applicationId "com.cc"
+        minSdkVersion 15
+        targetSdkVersion 26
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        javaCompileOptions { annotationProcessorOptions { includeCompileClasspath = true } }
+
+
+        manifestPlaceholders = [
+                GETUI_APP_ID : "JeqkJXdnqw5skPKkDT3zm9",
+                GETUI_APP_KEY : "d1NRRxar5s9YYeZXVWkHV7",
+                GETUI_APP_SECRET : "AKg2kqWYOh6HaW2iwWA468"
+        ]
+    }
+    buildTypes {
+        release {
+            minifyEnabled true
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    androidTestImplementation('com.android.support.test.espresso:espresso-core:2.2.2', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+    implementation project(':library_jar')
+    //轮播图
+    implementation 'com.xhb:xbanner:1.3.8'
+    implementation 'com.github.bumptech.glide:glide:3.7.0'
+    implementation 'com.android.support.constraint:constraint-layout:1.0.2'
+    implementation 'junit:junit:4.12'
+    //没有使用特殊Header，可以不加这行
+    implementation 'com.scwang.smartrefresh:SmartRefreshLayout:1.0.3'
+    implementation 'com.scwang.smartrefresh:SmartRefreshHeader:1.0.3'
+    implementation 'com.squareup.okhttp3:okhttp:3.11.0'
+    implementation 'com.google.code.gson:gson:2.8.5'
+    implementation 'com.squareup.picasso:picasso:2.5.2'
+    //
+    implementation 'com.android.support:appcompat-v7:27.1.1'
+    implementation 'com.android.support:cardview-v7:27.1.1'
+    //微信
+    implementation 'com.tencent.mm.opensdk:wechat-sdk-android-with-mta:+'
+    implementation 'com.tencent.mm.opensdk:wechat-sdk-android-with-mta:+'
+    implementation 'com.facebook.android:facebook-android-sdk:[4,5)'
+    //QQ
+    implementation files('libs/mta-sdk-2.0.0.jar')
+    implementation files('libs/open_sdk_r6020.jar')
+    implementation files('libs/mid-sdk-2.10.jar')
+    //地图
+    implementation files('libs/MidasPluginSDK.jar')
+    implementation 'com.wang.avi:library:1.0.0'
+    implementation 'com.nineoldandroids:library:2.4.0'
+    implementation 'com.jakewharton:butterknife:8.8.1'
+    implementation 'com.jakewharton:butterknife-compiler:8.8.1'
+    implementation 'com.android.support:multidex:1.0.3'
+    implementation files('libs/AMap3DMap_6.5.0_AMapNavi_6.4.0_AMapSearch_6.5.0_AMapLocation_4.3.0_20181016.jar')
+    implementation files('libs/GetuiSDK2.12.5.0.jar')
+    implementation files('libs/json_simple-1.1.jar')
+    //视频播放
+    implementation 'com.dou361.ijkplayer:jjdxm-ijkplayer:1.0.5'
+    //点赞动画
+    implementation 'com.github.jd-alexander:LikeButton:0.2.3'
+    implementation 'com.android.support:design:27.1.1'
+}

@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white">
+
+    <ImageView
+        android:id="@+id/frag_four_parallax"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_570_dip"
+        android:layout_marginTop="-120dp"
+        android:adjustViewBounds="true"
+        android:contentDescription="@string/app_name"
+        android:scaleType="centerCrop"
+        android:src="@mipmap/myselfbgp"
+        app:layout_collapseMode="parallax"/>
+
+    <!--<ImageView-->
+        <!--android:id="@+id/img_four_load"-->
+        <!--android:layout_width="@dimen/dimen_40_dip"-->
+        <!--android:layout_height="@dimen/dimen_40_dip"-->
+        <!--android:background="@mipmap/load"/>-->
+
+    <android.support.v4.widget.NestedScrollView
+        android:id="@+id/frag_four_scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:overScrollMode="never"
+        android:layout_marginBottom="@dimen/dimen_90_dip"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <android.support.design.widget.CollapsingToolbarLayout
+                    android:id="@+id/collapse"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:layout_scrollFlags="scroll|exitUntilCollapsed|snap"
+                    app:titleEnabled="false">
+
+                    <RelativeLayout
+                        android:id="@+id/panel_lyt"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dimen_80_dip"
+                        android:layout_gravity="bottom"
+                        android:layout_marginTop="@dimen/dimen_270_dip"
+                        android:orientation="vertical">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/dimen_50_dip"
+                            android:background="@color/white"
+                            android:layout_alignParentBottom="true"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentStart="true">
+
+                            <TextView
+                                android:id="@+id/txt_useraccount_id"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentStart="true"
+                                android:layout_alignParentTop="true"
+                                android:layout_marginStart="@dimen/dimen_115_dip"
+                                android:layout_marginTop="@dimen/dimen_5_dip"
+                                android:paddingBottom="@dimen/dimen_10_dip"
+                                android:text="ID：admin"
+                                android:textSize="@dimen/dimen_18_dip" />
+
+                        </RelativeLayout>
+
+                        <com.cc.utils.RoundImageView
+                            android:id="@+id/myself_bg_img"
+                            android:layout_width="@dimen/dimen_70_dip"
+                            android:layout_height="@dimen/dimen_70_dip"
+                            android:layout_marginLeft="@dimen/dimen_30_dip"
+                            android:src="@mipmap/f" />
+
+                    </RelativeLayout>
+
+                </android.support.design.widget.CollapsingToolbarLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/white"
+                android:orientation="vertical">
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dimen_0.5_dip"
+                    android:background="@color/darkgrey"/>
+
+                <com.cc.view.MyListView
+                    android:id="@+id/frag_four_lv"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:divider="@null"/>
+
+                <com.cc.view.MyGridView
+                    android:id="@+id/frag_four_gv"
+                    android:layout_marginTop="@dimen/dimen_15_dip"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:horizontalSpacing="@dimen/dimen_15_dip"
+                    android:numColumns="3"
+                    android:padding="@dimen/dimen_10_dip"
+                    android:verticalSpacing="@dimen/dimen_20_dip"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dimen_0.5_dip"
+                    android:layout_marginTop="@dimen/dimen_15_dip"
+                    android:background="@color/darkgrey"/>
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dimen_80_dip"
+                    android:layout_marginTop="@dimen/dimen_8_dip"
+                    android:src="@mipmap/bottom_bg"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dimen_0.5_dip"
+                    android:layout_marginTop="@dimen/dimen_5_dip"
+                    android:background="@color/darkgrey"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </android.support.v4.widget.NestedScrollView>
+
+    <android.support.v7.widget.Toolbar
+        style="@style/AppTheme.Toolbar"
+        android:id="@+id/frag_four_toolbar"
+        android:background="@android:color/transparent"
+        app:layout_collapseMode="pin">
+        <android.support.v7.widget.ButtonBarLayout
+            android:id="@+id/frag_four_bt_BarLayout"
+            android:layout_gravity="center"
+            android:layout_height="@dimen/dimen_60_dip"
+            android:gravity="center"
+            android:layout_width="wrap_content">
+            <com.cc.utils.RoundImageView
+                android:id="@+id/frag_four_toolbar_img"
+                android:src="@mipmap/f"
+                android:layout_width="@dimen/dimen_50_dip"
+                android:layout_height="@dimen/dimen_50_dip"/>
+            <TextView
+                android:id="@+id/frag_four_toolbar_title"
+                android:layout_gravity="center"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:layout_marginLeft="@dimen/dimen_10_dip"
+                android:textSize="@dimen/dimen_20_dip"
+                android:text="@string/personalcenter"/>
+        </android.support.v7.widget.ButtonBarLayout>
+    </android.support.v7.widget.Toolbar>
+</FrameLayout>

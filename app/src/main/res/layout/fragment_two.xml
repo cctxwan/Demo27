@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:layout_marginBottom="@dimen/dimen_90_dip">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <android.support.design.widget.TabLayout
+                android:id="@+id/frag_two_tabLayout"
+                android:layout_width="@dimen/dimen_410_dip"
+                app:tabIndicatorColor="@color/blue"
+                app:tabTextColor="@color/grey"
+                app:tabSelectedTextColor="@color/black"
+                android:layout_height="@dimen/dimen_60_dip"
+                android:background="@color/cyan"/>
+
+            <com.scwang.smartrefresh.layout.SmartRefreshLayout
+                android:id="@+id/frag_two_refreshLayout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/dimen_60_dip"
+                app:srlEnablePreviewInEditMode="false">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <android.support.v4.view.ViewPager
+                        android:id="@+id/frag_two_viewpager"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@color/white" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dimen_0.5_dip"
+                        android:background="@color/gainsboro" />
+
+                </LinearLayout>
+
+            </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+
+            <ImageView
+                android:id="@+id/frag_two_img_add"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_60_dip"
+                android:layout_alignParentTop="true"
+                android:padding="@dimen/dimen_10_dip"
+                android:background="@color/cyan"
+                android:layout_toEndOf="@+id/frag_two_tabLayout"
+                app:srcCompat="@android:drawable/ic_menu_add" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/frag_two_toolbar"
+        style="@style/AppTheme.Toolbar"
+        android:background="@android:color/transparent"
+        android:visibility="gone"
+        app:layout_collapseMode="pin">
+
+        <android.support.v7.widget.ButtonBarLayout
+            android:id="@+id/fragment_two_bt_BarLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center">
+
+            <TextView
+                android:id="@+id/frag_two_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="搜索"
+                android:textSize="@dimen/dimen_23_dip" />
+        </android.support.v7.widget.ButtonBarLayout>
+    </android.support.v7.widget.Toolbar>
+
+</RelativeLayout>

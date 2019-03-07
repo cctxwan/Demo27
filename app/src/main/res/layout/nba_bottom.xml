@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="@dimen/dimen_160_dip"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_round_white">
+
+    <TextView
+        android:id="@+id/txt_teamvs_sel"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_55_dip"
+        android:text="@string/teamvs"
+        android:textColor="@color/black"
+        android:textSize="@dimen/dimen_18_dip"
+        android:gravity="center"/>
+
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/dimen_0.5_dip"
+        android:background="@color/darkgrey"/>
+
+    <TextView
+        android:id="@+id/txt_teamsc_sel"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_55_dip"
+        android:text="@string/teamsc"
+        android:textColor="@color/black"
+        android:textSize="@dimen/dimen_18_dip"
+        android:gravity="center"/>
+
+</LinearLayout>

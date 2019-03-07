@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/img_xzysmt_load"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:visibility="gone"
+        android:src="@mipmap/load" />
+
+    <android.support.v4.widget.NestedScrollView
+        android:id="@+id/ns_xzysmt"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/img_xzmt_icon"
+                    android:layout_width="@dimen/dimen_70_dip"
+                    android:layout_height="@dimen/dimen_70_dip"
+                    android:layout_marginTop="@dimen/dimen_30_dip"
+                    android:src="@mipmap/load"/>
+
+                <TextView
+                    android:id="@+id/txt_xzmt_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dimen_10_dip"
+                    android:textSize="@dimen/dimen_24_dip"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dimen_0.5_dip"
+                    android:layout_marginTop="@dimen/dimen_30_dip"
+                    android:background="@color/darkgrey"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_marginLeft="@dimen/dimen_20_dip"
+                android:layout_marginRight="@dimen/dimen_20_dip"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/txt_xzmt_all"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dimen_30_dip"
+                    android:textSize="@dimen/dimen_20_dip"/>
+
+                <TextView
+                    android:id="@+id/txt_xzmt_work"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dimen_10_dip"
+                    android:textSize="@dimen/dimen_20_dip"/>
+
+                <TextView
+                    android:id="@+id/txt_xzmt_color"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dimen_10_dip"
+                    android:textSize="@dimen/dimen_20_dip"/>
+
+                <TextView
+                    android:id="@+id/txt_xzmt_health"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dimen_10_dip"
+                    android:textSize="@dimen/dimen_20_dip"/>
+
+                <TextView
+                    android:id="@+id/txt_xzmt_love"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dimen_10_dip"
+                    android:textSize="@dimen/dimen_20_dip"/>
+
+                <TextView
+                    android:id="@+id/txt_xzmt_money"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dimen_10_dip"
+                    android:textSize="@dimen/dimen_20_dip"/>
+
+                <TextView
+                    android:id="@+id/txt_xzmt_number"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dimen_10_dip"
+                    android:textSize="@dimen/dimen_20_dip"/>
+
+                <TextView
+                    android:id="@+id/txt_xzmt_QFriend"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dimen_10_dip"
+                    android:textSize="@dimen/dimen_20_dip"/>
+
+                <TextView
+                    android:id="@+id/txt_xzmt_summary"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dimen_10_dip"
+                    android:textSize="@dimen/dimen_20_dip"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </android.support.v4.widget.NestedScrollView>
+
+</RelativeLayout>

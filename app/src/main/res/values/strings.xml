@@ -1,0 +1,203 @@
+<resources>
+
+    <!--<integer-array name="material_colors">-->
+        <!--<item>@color/material_red</item>-->
+        <!--<item>@color/material_green</item>-->
+        <!--<item>@color/material_blue</item>-->
+        <!--<item>@color/material_yellow</item>-->
+    <!--</integer-array>-->
+
+    <string name="facebook_app_id">468786603632390</string>
+    <string name="fb_login_protocol_scheme">fb468786603632390</string>
+
+    <string name="app_name">财财（自定义）</string>
+    <string name="guide_begin">开始体验</string>
+    <string name="permission_content">您需要打开此权限</string>
+    <string name="per_open">去开启</string>
+    <string name="per_canal">取消</string>
+    <string name="bottom_one">第一个</string>
+    <string name="bottom_two">第二个</string>
+    <string name="bottom_add">添加</string>
+    <string name="bottom_three">发现</string>
+    <string name="bottom_four">我</string>
+    <string name="add_username">添加联系人</string>
+    <string name="fsz">发送中</string>
+    <string name="notlogin">你还未登录</string>
+    <string name="login">登录</string>
+    <string name="optaccount">账号不能为纯数字（至少为6位）</string>
+    <string name="optpass">请输入密码（至少为6位）</string>
+    <string name="compass">请确认密码（至少为6位）</string>
+    <string name="completephone">确认手机号码</string>
+    <string name="phonedialog_cancel">取消</string>
+    <string name="phonedialog_submit">确认</string>
+    <string name="getcode">获取验证码</string>
+    <string name="notnull">账号密码不能为空</string>
+    <string name="minsex">账号密码至少为6位</string>
+    <string name="login_error">登录失败！该用户不存在</string>
+    <string name="findpsd">找回密码</string>
+    <string name="tellme">联系我们</string>
+    <string name="register">注册</string>
+    <string name="look_yhxy">请您阅读并勾选</string>
+    <string name="yhxy">用户协议</string>
+    <string name="pass_inconsistent">密码不一致</string>
+    <string name="select_yhxy">请先勾选用户协议</string>
+    <string name="notinteger">账号不能为纯数字</string>
+    <string name="register_error">注册失败</string>
+    <string name="getDataError">数据加载失败</string>
+    <string name="twofragpupmsg">又发现了10条新内容</string>
+    <string name="tabitems">TabItems</string>
+    <string name="mytab">我的频道</string>
+    <string name="mytabselect">点击进入频道</string>
+    <string name="mytabedit">编辑</string>
+    <string name="alltab">全部频道</string>
+    <string name="addtab">点击添加频道</string>
+    <string name="histoday">历史上的今天</string>
+    <string name="personalcenter">个人中心</string>
+
+    <string name="cancle">取消</string>
+    <string name="title">请选择日期</string>
+    <string name="commit">确定</string>
+    <string name="year">年</string>
+    <string name="month">月</string>
+    <string name="day">日</string>
+    <string name="hour">时</string>
+    <string name="minute">分</string>
+    <string name="current_date">当前日期</string>
+
+    <string name="histoday_about">根据当前日期查找的历史事件</string>
+
+    <string name="jokes">笑话大全</string>
+    <string name="begin_time">开始时间：</string>
+    <string name="end_time">结束时间：</string>
+    <string name="todayjoke">每日一笑</string>
+    <string name="changetoday">换一换</string>
+
+    <string name="wxjx">微信精选</string>
+    <string name="wxjxxq">微信精选文章详情</string>
+    <string name="wxjx_title">这里显示微信精选文章的标题</string>
+    <string name="wxdetail_comment_hint">请输入您的高见...</string>
+    <string name="comment">评论</string>
+    <string name="comment_succ">评论成功</string>
+    <string name="comment_fail">评论失败</string>
+
+    <string name="qq">QQ号码测吉凶</string>
+    <string name="nba">NBA</string>
+    <string name="football">足球</string>
+    <string name="xhzd">新华字典</string>
+    <string name="bzdmcx">标准电码查询</string>
+    <string name="xzys">星座运势</string>
+
+
+    <string name="zgjm">周公解梦</string>
+    <string name="zgjm_search_hint">请输入关键字</string>
+    <string name="getdata_bystr">没有找到与当前关键字匹配的内容</string>
+    <string name="zgjm_search">搜索</string>
+    <string name="inputC">请输入合法汉字！</string>
+
+
+    <string name="ztzh">字体转换</string>
+    <string name="ztzhsm">使用说明：您好，通用翻译API当月翻译字符数≤200万，当月免费。超过200万字符，按照49元人民币/百万字符，支付当月全部翻译字符数费用。</string>
+    <string name="yi">译</string>
+    <string name="zdjc">自动检测</string>
+    <string name="en">英语</string>
+
+    <string name="xcx">小查询</string>
+    <string name="sz">设置</string>
+
+    <string name="qqlogin_error">QQ登录失败</string>
+    <string name="qqlogin_cancel">QQ登录取消</string>
+    <string name="qqlogin_succ">QQ登录成功</string>
+
+    <string name="qqshare_error">QQ朋友发送失败</string>
+    <string name="qqshare_cancel">QQ朋友发送取消</string>
+    <string name="qqshare_succ">QQ朋友发送成功</string>
+
+    <string name="qq_qzone_error">QQ空间分享失败</string>
+    <string name="qq_qzone_cancel">QQ空间分享取消</string>
+    <string name="qq_qzone_succ">QQ空间分享成功</string>
+
+    <string name="sel_by_bs">*点击部首可查询出该部首对应的汉字*</string>
+    <string name="sel_by_py">*点击拼音可查询出该部首对应的汉字*</string>
+
+    <string name="byz">白羊座</string>
+    <string name="jnz">金牛座</string>
+    <string name="shuangzz">双子座</string>
+    <string name="jxz">巨蟹座</string>
+    <string name="shizz">狮子座</string>
+    <string name="cnz">处女座</string>
+    <string name="tcz">天秤座</string>
+    <string name="txz">天蝎座</string>
+    <string name="ssz">射手座</string>
+    <string name="mjz">摩羯座</string>
+    <string name="spz">水瓶座</string>
+    <string name="syz">双鱼座</string>
+
+    <string name="xz_all">综合指数</string>
+    <string name="xz_color">幸运色</string>
+    <string name="xz_health">健康指数</string>
+    <string name="xz_love">爱情指数</string>
+    <string name="xz_money">财运指数</string>
+    <string name="xz_number">幸运数字</string>
+    <string name="xz_QFriend">速配星座</string>
+    <string name="xz_summary">今日概述</string>
+    <string name="xz_work">工作指数</string>
+    <string name="xz_job">求职</string>
+
+    <string name="xz_gaishu">概述</string>
+    <string name="xz_shuoming">说明</string>
+    <string name="xz_shiye">事业</string>
+    <string name="xz_ganqing">感情</string>
+    <string name="xz_jiankang">健康</string>
+    <string name="xz_caiyun">财运</string>
+    <string name="xz_luckeytone">幸运石</string>
+
+    <string name="login_succ">登录成功</string>
+    <string name="login_fail">登录失败</string>
+    <string name="login_cancel">取消登录</string>
+
+    <string name="xwxq">新闻详情</string>
+    <string name="xwxqfx">●●●</string>
+
+    <string name="change_psd">修改密码</string>
+    <string name="old_psd">请输入旧密码</string>
+    <string name="new_psd">请输入新密码</string>
+    <string name="com_psd">请确认新密码</string>
+    <string name="forget_psd">忘记密码？</string>
+
+    <string name="today_sign">今日签到</string>
+    <string name="tomorrow_sign">明日签到</string>
+    <string name="everyday_sign">每日签到</string>
+    <string name="sign_about">用户每天可进行签到，当天只能签到一次。</string>
+    <string name="punched">已打卡</string>
+
+    <string name="center_img">个人头像</string>
+    <string name="center_name">姓名</string>
+    <string name="center_age">年龄</string>
+    <string name="center_sex">性别</string>
+    <string name="center_year">出生年月</string>
+    <string name="center_address">住址</string>
+    <string name="center_realneme">实名认证</string>
+
+    <string name="nobegin">未开始</string>
+    <string name="ing">直播中</string>
+    <string name="over">已结束</string>
+
+    <string name="teamvs">球队对战</string>
+    <string name="teamsc">球队赛程</string>
+    <string name="teamxxsc">球队详细赛程</string>
+
+    <string name="notteam">球队信息不能为空</string>
+    <string name="zhudui">请输入主队名称</string>
+    <string name="kedui">请输入客队名称</string>
+
+    <string name="video">视频直播</string>
+    <string name="datacount">数据统计</string>
+    <string name="gametime">比赛时间</string>
+    <string name="gamescore">全场比分</string>
+
+    <string name="smallsel">小查询</string>
+
+    <string name="hasNotOpenGps">请开始GPS定位</string>
+
+
+</resources>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:id="@+id/lin_nba_teaminfo"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/dimen_90_dip"
+    android:layout_height="@dimen/dimen_90_dip"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <com.cc.utils.RoundImageView
+        android:id="@+id/img_nba_teaminfo"
+        android:layout_width="@dimen/dimen_45_dip"
+        android:layout_height="@dimen/dimen_45_dip"
+        android:src="@mipmap/ic_launcher"/>
+
+    <TextView
+        android:id="@+id/txt_nba_teaminfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_12_dip"
+        android:textSize="@dimen/dimen_16_dip"
+        android:textColor="@color/darkgrey"
+        android:text="@string/teamsc"/>
+
+</LinearLayout>

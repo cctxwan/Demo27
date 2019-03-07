@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activity.NewDetailActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_60_dip"
+        android:background="@color/cyan">
+
+        <TextView
+            android:id="@+id/txt_nd"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/dimen_60_dip"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:textSize="@dimen/dimen_22_dip"
+            android:text="@string/xwxq"/>
+
+        <ImageView
+            android:id="@+id/xwd_img_back"
+            android:layout_width="@dimen/dimen_30_dip"
+            android:layout_height="@dimen/dimen_30_dip"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="@dimen/dimen_10_dip"
+            app:srcCompat="@mipmap/back" />
+
+        <TextView
+            android:id="@+id/xwd_txt_share"
+            android:layout_width="@dimen/dimen_40_dip"
+            android:layout_height="match_parent"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="@dimen/dimen_15_dip"
+            android:gravity="center"
+            android:textSize="@dimen/dimen_15_dip"
+            android:text="@string/xwxqfx" />
+
+    </RelativeLayout>
+
+    <WebView
+        android:id="@+id/newdetail_webview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </WebView>
+
+</LinearLayout>

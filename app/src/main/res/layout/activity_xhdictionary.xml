@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activity.XHDictionaryActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/cyan">
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/dimen_60_dip"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:text="@string/xhzd"
+            android:textColor="@color/black"
+            android:textSize="@dimen/dimen_22_dip" />
+
+        <ImageView
+            android:id="@+id/xh_img_back"
+            android:layout_width="@dimen/dimen_30_dip"
+            android:layout_height="@dimen/dimen_30_dip"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="@dimen/dimen_10_dip"
+            app:srcCompat="@mipmap/back" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_52_dip"
+        android:orientation="horizontal"
+        android:background="@color/ghostwhite">
+
+        <android.support.design.widget.TabLayout
+            android:id="@+id/xh_tabLayout"
+            android:layout_width="match_parent"
+            app:tabIndicatorColor="@color/blue"
+            android:layout_gravity="center"
+            app:tabTextColor="@color/grey"
+            app:tabSelectedTextColor="@color/cyan"
+            android:layout_height="@dimen/dimen_60_dip"/>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_0.5_dip"
+        android:background="@color/gainsboro" />
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/xh_viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white" />
+
+</LinearLayout>

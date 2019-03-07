@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activity.FontChangeActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/cyan">
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/dimen_60_dip"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:gravity="center"
+                android:text="@string/ztzh"
+                android:textColor="@color/black"
+                android:textSize="@dimen/dimen_22_dip" />
+
+            <ImageView
+                android:id="@+id/ztzh_img_back"
+                android:layout_width="@dimen/dimen_30_dip"
+                android:layout_height="@dimen/dimen_30_dip"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="@dimen/dimen_10_dip"
+                app:srcCompat="@mipmap/back" />
+
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/dimen_15_dip"
+            android:layout_margin="@dimen/dimen_15_dip"
+            android:textColor="@color/darkgrey"
+            android:text="@string/ztzhsm"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_150_dip"
+            android:layout_margin="@dimen/dimen_15_dip"
+            android:background="@drawable/rv_bg"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/et_yuanwen"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="top|left"
+                android:layout_margin="@dimen/dimen_10_dip"
+                android:textSize="@dimen/dimen_15_dip"
+                android:background="@null"/>
+            <requestFocus/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dimen_15_dip"
+            android:layout_marginRight="@dimen/dimen_15_dip"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/txt_zdjclanguage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/zdjc"
+                android:textColor="@color/dodgerblue"
+                android:textSize="@dimen/dimen_21_dip"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dimen_10_dip"
+                android:text="@string/yi"
+                android:textColor="@color/grey"
+                android:textSize="@dimen/dimen_21_dip"/>
+
+            <LinearLayout
+                android:id="@+id/lin_languagechange"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dimen_10_dip"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/en"
+                    android:textSize="@dimen/dimen_21_dip"
+                    android:textColor="@color/dodgerblue"/>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/dimen_5_dip"
+                    android:src="@mipmap/zhankai"
+                    android:layout_gravity="center"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_150_dip"
+            android:layout_margin="@dimen/dimen_15_dip"
+            android:background="@drawable/rv_bg"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/et_yiwen"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/dimen_10_dip"
+                android:textSize="@dimen/dimen_15_dip"
+                android:background="@null"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</android.support.v4.widget.NestedScrollView>

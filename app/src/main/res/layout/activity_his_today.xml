@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:overScrollMode="never"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.HisTodayActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/cyan">
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/dimen_60_dip"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:text="@string/histoday"
+            android:textColor="@color/black"
+            android:textSize="@dimen/dimen_22_dip" />
+
+        <ImageView
+            android:id="@+id/timeline_img_back"
+            android:layout_width="@dimen/dimen_30_dip"
+            android:layout_height="@dimen/dimen_30_dip"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="@dimen/dimen_10_dip"
+            android:src="@mipmap/back" />
+
+    </RelativeLayout>
+
+    <android.support.v4.widget.NestedScrollView
+        android:id="@+id/histoday_ns"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:overScrollMode="never">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_0.5_dip"
+                android:background="@color/darkgrey"/>
+
+            <RelativeLayout
+                android:id="@+id/selectTime"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_80_dip"
+                android:background="@color/white"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="@dimen/dimen_15_dip"
+                    android:gravity="center"
+                    android:text="@string/current_date"
+                    android:textColor="@color/color4"
+                    android:textSize="@dimen/dimen_18_dip" />
+
+                <TextView
+                    android:id="@+id/currentTime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentEnd="true"
+                    android:background="@null"
+                    android:gravity="center"
+                    android:paddingEnd="@dimen/dimen_15_dip"
+                    android:paddingStart="@dimen/dimen_15_dip"
+                    android:textColor="@color/color5"
+                    android:textSize="@dimen/dimen_17_dip" />
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_0.5_dip"
+                android:background="@color/darkgrey"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_80_dip"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/histoday_about"
+                    android:textSize="@dimen/dimen_16_dip"
+                    android:gravity="center"/>
+
+                <ImageView
+                    android:layout_width="@dimen/dimen_180_dip"
+                    android:layout_height="@dimen/dimen_40_dip"
+                    android:src="@mipmap/timeline_title"/>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_0.5_dip"
+                android:background="@color/darkgrey"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:gravity="center">
+
+                <ImageView
+                    android:id="@+id/img_load"
+                    android:src="@mipmap/load"
+                    android:layout_marginTop="@dimen/dimen_20_dip"
+                    android:layout_width="@dimen/dimen_50_dip"
+                    android:layout_height="@dimen/dimen_70_dip" />
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/timeline_listview"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:divider="@null"/>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_0.5_dip"
+                android:layout_marginTop="@dimen/dimen_15_dip"
+                android:background="@color/darkgrey"/>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_80_dip"
+                android:layout_marginTop="@dimen/dimen_8_dip"
+                android:src="@mipmap/bottom_bg"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_0.5_dip"
+                android:layout_marginTop="@dimen/dimen_5_dip"
+                android:background="@color/darkgrey"/>
+
+        </LinearLayout>
+
+    </android.support.v4.widget.NestedScrollView>
+
+</LinearLayout>

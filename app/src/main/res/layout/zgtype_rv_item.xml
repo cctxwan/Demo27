@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:id="@+id/lin_zgtype"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:padding="@dimen/dimen_10_dip"
+    android:gravity="center"
+    android:layout_width="@dimen/dimen_95_dip"
+    android:layout_height="@dimen/dimen_50_dip">
+
+    <TextView
+        android:id="@+id/zgtype_item_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/dimen_17_dip"
+        android:textColor="@color/darkgrey"
+        android:text="@string/zgjm" />
+
+</LinearLayout>
